@@ -1,0 +1,21 @@
+{
+  "scope": "Sequential Python/SQLite failure model; no AWS calls or load testing",
+  "command": "python3 scripts/evidence.py",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "scenarios": [
+    "test_model.ReliabilityTests.test_accept_is_atomic",
+    "test_model.ReliabilityTests.test_baseline_loses_notification",
+    "test_model.ReliabilityTests.test_changed_payload_conflicts",
+    "test_model.ReliabilityTests.test_consumer_transaction_rolls_back_receipt_and_effect",
+    "test_model.ReliabilityTests.test_lost_ack_is_safe_to_retry",
+    "test_model.ReliabilityTests.test_partial_batch_reports_only_failed_message_id",
+    "test_model.ReliabilityTests.test_publish_failure_keeps_event_pending",
+    "test_model.ReliabilityTests.test_relay_crash_duplicates_delivery_but_not_effect",
+    "test_model.ReliabilityTests.test_request_keys_are_tenant_scoped",
+    "test_model.ReliabilityTests.test_request_retry_returns_original_order"
+  ]
+}
